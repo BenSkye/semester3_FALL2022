@@ -1,0 +1,42 @@
+﻿USE Cartesian
+
+SELECT * FROM EnDict e, VNDict v
+		WHERE e.Nmbr = v.Nmbr
+
+
+SELECT * FROM EnDict e INNER JOIN VNDict v
+		ON e.Nmbr = v.Nmbr
+
+SELECT * FROM EnDict e JOIN VNDict v
+		ON e.Nmbr = v.Nmbr
+
+--3 CÂU TƯƠNG ĐƯƠNG
+
+
+--2.HỤT MẤT CỦA TUI TỪ 4-FOUR VÀ 5 NĂM
+
+--LẤY TIẾNG ANH LÀM CHUẨN, TÌM CÁC NGHĨA TIẾNG VIỆT TƯƠNG ĐƯƠNG NẾU KHÔNG CÓ VẪN PHẢI HIỆN RA
+SELECT * FROM EnDict e LEFT JOIN VNDict v ON e.Nmbr = v.Nmbr 
+SELECT * FROM EnDict e LEFT OUTER JOIN VNDict v ON e.Nmbr = v.Nmbr
+
+--3.TUI MUỐN LẤY TIẾNG VIỆT LÀM ĐẦU
+SELECT * FROM VNDict V LEFT OUTER JOIN ENDict E ON V.Nmbr = E.Nmbr
+
+--VẪN LẤY TIẾNG VIỆT LÀM ĐẦU, NHƯNG ĐỂ TIẾNG VIỆT BÊN TAY PHẢI
+SELECT * FROM EnDict E RIGHT OUTER JOIN VNDict V ON E.Nmbr = V.Nmbr
+
+SELECT * FROM EnDict E FULL OUTER JOIN VNDict V ON E.Nmbr = V.Nmbr
+--FULL OUTER JOIN THỨ TỰ TABLE KHÔNG QUAN TRỌNG
+--LEFT RIGHT JOIN THỨ TỰ TABLE LÀ CÓ CHUYỆN KHÁC
+--OUTER JOIN SINH RA ĐỂ ĐẢM BẢO VIỆC KẾT NỐI GHÉP BẢNG KHÔNG BỊ MẤT DATA
+--DO INNER JOIN, JOIN CHỈ TÌM CÁI CHUNG HAI BÊN
+
+--SAU KHI TÌM RA ĐƯỢC DATA CHUNG RIÊNG, TA CÓ QUYỀN FILTER LOẠI CELL NÀO ĐÓ, WHERE NHƯ BÌNH THƯỜNG
+
+SELECT * FROM EnDict E LEFT OUTER JOIN VNDict V
+						ON E.Nmbr = V.Nmbr 
+						WHERE E.Nmbr >=3
+
+SELECT * FROM EnDict E FULL OUTER JOIN VNDict V
+						ON E.Nmbr = V.Nmbr 
+						WHERE E.Nmbr >=3 OR V.Nmbr >=3

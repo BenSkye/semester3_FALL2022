@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Src</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="mycode.js"></script>
+</head>
+
+<body>
+
+    <div class="validateForm">
+
+        <h1>Contact</h1>
+        <div class="element">
+            <p class="label">Name</p>
+            <input class="ip-e" type="text" id="name" placeholder="Your Name">
+        </div>
+        <div class="element">
+            <p class="label">Phone</p>
+            <input class="ip-e" type="text" id="phone" placeholder="Your phone">
+        </div>
+        <div class="element">
+            <p class="label">Email</p>
+            <input class="ip-e" type="text" id="email" placeholder="Your Email">
+        </div>
+        <button onclick="check()" class="submit">Send</button>
+
+    </div>
+    <!-- =========================================================== -->
+
+    <div class="createTable">
+        <h1>Template table</h1>
+        <table class="table" border="1">
+            <tr>
+                <th>Họ tên</th>
+                <th>Ngày sinh</th>
+                <th>Giới tính</th>
+            </tr>
+            <tr>
+                <td>Trần Anh Đức</td>
+                <td>03/08/1993</td>
+                <td>Nam</td>
+            </tr>
+            <tr>
+                <td>Kiều Thị Thu Hằng</td>
+                <td>04/09/1991</td>
+                <td>Nữ</td>
+            </tr>
+            <tr>
+                <td>Vương Thị Lê Na</td>
+                <td>06/10/1991</td>
+                <td>Nữ</td>
+            </tr>
+        </table>
+    </div>
+    <!-- =========================================================== -->
+    <div class="validateForm2">
+        <h1>Tư vấn tuyển sinh</h1>
+        <input id="name2" type="text" class="ip-v2" placeholder="Nhập tên của bạn">
+        <input id="email2" type="text" class="ip-v2" placeholder="Nhập email của bạn">
+        <h5>Năm tốt nghiệp THPT</h5>
+        <select name="namtotnghiep" id="namtotnghiep">
+            <option value="2020">2020</option>
+            <option value="2019">2019</option>
+            <option value="2018">2018</option>
+        </select>
+        <h5>Điểm toán</h5>
+        <select name="math" id="math">
+            <option value="8-10">8-10</option>
+            <option value="6-8">6-8</option>
+            <option value="4-6">4-6</option>
+
+        </select>
+        <h5>Điểm lý</h5>
+        <select name="physical" id="physical">
+            <option value="8-10">8-10</option>
+            <option value="6-8">6-8</option>
+            <option value="4-6">4-6</option>
+
+        </select>
+        <h5>Điểm ngoại ngữ</h5>
+        <select name="eng" id="english">
+            <option value="8-10">8-10</option>
+            <option value="6-8">6-8</option>
+            <option value="4-6">4-6</option>
+
+        </select>
+
+        <h5>Kỹ năng</h5>
+        <input type="checkbox" id="check1">Tư duy logic tốt
+        <input type="checkbox" id="check2">Có khiếu thẩm mỹ
+        <input type="checkbox" id="check3">Nhạy bén
+        <textarea name="" id="text-area" cols="30" rows="10"></textarea>
+
+        <button onclick="validate()" class="submit2">Send1</button>
+
+        <button onclick="validate2()" class="submit2">Send2</button>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+.validateForm{
+   
+    text-align: center;
+    background-color: black;
+    color: white;
+    max-width: 600px;
+    padding: 30px;
+    
+   
+}
+
+.element {
+    display: flex;
+   
+    align-items: center;
+}
+
+.label{
+    font-size: 16px;
+    padding: 10px;
+    margin: 0 10px;
+}
+
+.submit{
+    margin-top: 10px;
+}
+/* ==================================================================== */
+.createTable{
+    background-color: #ccc;
+    max-width: 600px;
+    padding: 30px;
+    text-align: center;
+
+}
+
+.table{
+    margin: 100px auto;
+
+}
+/* ==================================================================== */
+
+.validateForm2{
+    background-color: rgb(255, 136, 0);
+    color: white;
+    max-width: 600px;
+    padding: 30px;
+}
+
+.ip-v2{
+display: block;
+margin-bottom: 10px;
+}
+
+h5{
+    font-size: 16px;
+    margin: 5px 0;
+    
+   
+}
+
+
+#text-area{
+    margin-top: 10px;
+    display: none;
+}
+
+.submit2{
+    display: block;
+    margin-top: 10px;
+    
+}
+
+.validateForm2 select{
+    display: inline-block;
+}
